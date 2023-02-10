@@ -1,0 +1,44 @@
+{% load static %}
+<HTML>
+    <HEAD> 
+    <TITLE>BioInformatic Data Lake</TITLE>
+    <!-- <link href="style/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{% static 'LakeFront/style/style.css' %}"> 
+    </HEAD>
+    
+    <BODY BGCOLOR="FFFFFF">
+    
+    <CENTER><IMG SRC="{% static 'LakeFront/image/UCLogo.png' %}" ALIGN="BOTTOM"> </CENTER>
+    
+    <HR> 
+        <div class="boldedForheader">
+        <CENTER> Welcome to the BioInformatic Data Lake</CENTER>
+        </div>
+    <HR>
+        <br>
+    <CENTER class="boldedForHeaderLink">
+        <a href="https://portal.gdc.cancer.gov">TCGA DATA PROTAL</a> &nbsp  &nbsp 
+        <a href="http://xena.ucsc.edu/">XENA DATA PROTAL</a> &nbsp  &nbsp
+        <a href="https://www.ucalgary.ca/">UCALGARY DATA PROTAL</a>
+    </CENTER>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <CENTER>
+        <H1 class = "boldedForheader">TELL ME YOUR GENE OF INTEREST</H1>
+            <form action="test.html">
+                <label for="fname">Gene of interest:</label><br><br>
+                <input type="text" id="fname" name="fname" value="#BUD31"><br><br>
+                <input type="submit" value="Submit">
+            </form> 
+    </CENTER>
+
+    
+
+    </BODY>
+    
+</HTML>
+    
+        
