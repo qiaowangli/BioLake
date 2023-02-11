@@ -1,27 +1,38 @@
+{% load static %}
+
 <HTML>
-
-    <HEAD>
-    
-    <TITLE> Prostate Cancer Center</TITLE>
-    
+    <HEAD> 
+    <TITLE>BioInformatic Data Lake</TITLE>
+    <link rel="stylesheet" href="{% static 'LakeFront/style/style.css' %}"> 
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     </HEAD>
-    
-    <BODY BGCOLOR="FFFFFF">
-    
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-    <CENTER><IMG SRC="image/smile.jpeg" ALIGN="TOP"> 
-    
-    
-    <H1 class="boldedForheader">WE ARE STILL WORKING ON IT</H1>
 
+    <body> 
+        <div style="margin: 100px ">
+           <div class="wave"></div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+       
+           <CENTER><IMG SRC="{% static 'LakeFront/image/UCLogo.jpeg' %}" ALIGN="BOTTOM" width="200" height="200" ></CENTER>
+            <br>
+            <br>
+            <br>
+    <HR> 
+        <div class="boldedForheader">
+        <CENTER> Select the type of analysis for {{gene}}</CENTER>
+        </div>
+    <HR>
+        <br>
+    <CENTER class="boldedForHeaderLink">
+        <a href="https://portal.gdc.cancer.gov">mRNA Expression Analysis</a> &nbsp  &nbsp 
+        <a href="https://www.cbioportal.org/">DNA Mutation Analysis</a> &nbsp  &nbsp 
+        <a href="http://xena.ucsc.edu/">Cross sides Analysis </a> &nbsp  &nbsp
+        <a href="http://xena.ucsc.edu/">Survival Analysis </a> &nbsp  &nbsp
     </CENTER>
-
-    
+    <br>
+    <br>
+    <br>
+    <br>
 </HTML>
     
         

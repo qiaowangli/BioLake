@@ -1,44 +1,60 @@
 {% load static %}
+
 <HTML>
     <HEAD> 
     <TITLE>BioInformatic Data Lake</TITLE>
-    <!-- <link href="style/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{% static 'LakeFront/style/style.css' %}"> 
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     </HEAD>
+
+    <body> 
+        <div style="margin: 60px ">
+           <div class="wave"></div>
+           <div class="wave"></div>
+           <div class="wave"></div>
     
-    <BODY BGCOLOR="FFFFFF">
     
-    <CENTER><IMG SRC="{% static 'LakeFront/image/UCLogo.png' %}" ALIGN="BOTTOM"> </CENTER>
-    
-    <HR> 
-        <div class="boldedForheader">
+           <CENTER><IMG SRC="{% static 'LakeFront/image/UCLogo.jpeg' %}" ALIGN="BOTTOM" width="220" height="220" ></CENTER>
+            <br>
+            <br>
+
+
+        <div class="MainHeader">
         <CENTER> Welcome to the BioInformatic Data Lake</CENTER>
+        <CENTER class="boldedForheader"> A place we do everything for you</CENTER>
         </div>
-    <HR>
-        <br>
-    <CENTER class="boldedForHeaderLink">
+    <!-- <CENTER class="boldedForHeaderLink">
         <a href="https://portal.gdc.cancer.gov">TCGA DATA PROTAL</a> &nbsp  &nbsp 
+        <a href="https://www.cbioportal.org/">CBIOPROTAL</a> &nbsp  &nbsp 
         <a href="http://xena.ucsc.edu/">XENA DATA PROTAL</a> &nbsp  &nbsp
-        <a href="https://www.ucalgary.ca/">UCALGARY DATA PROTAL</a>
-    </CENTER>
-    <br>
-    <br>
+    </CENTER> -->
     <br>
     <br>
 
     <CENTER>
-        <H1 class = "boldedForheader">TELL ME YOUR GENE OF INTEREST</H1>
-            <form action="test.html">
-                <label for="fname">Gene of interest:</label><br><br>
-                <input type="text" id="fname" name="fname" value="#BUD31"><br><br>
-                <input type="submit" value="Submit">
-            </form> 
+        <IMG SRC="{% static 'LakeFront/image/demo1.png' %}" ALIGN="CENTER" width="200" height="150" >
+        <IMG SRC="{% static 'LakeFront/image/demo2.png' %}" ALIGN="CENTER" width="200" height="150" >
+        <IMG SRC="{% static 'LakeFront/image/demo3.png' %}" ALIGN="CENTER" width="200" height="150" >
+        <IMG SRC="{% static 'LakeFront/image/demo4.png' %}" ALIGN="CENTER" width="200" height="150" >
+    
     </CENTER>
 
-    
+    <br>
 
-    </BODY>
-    
+    <CENTER>
+        <H1 class = "boldedForheader">TELL ME YOUR GENE OF INTEREST</H1>
+        <form action="geneAnalysis/" method="post">
+            {% csrf_token %}
+            <label for="GeneName"></label>
+            <input
+              type="text"
+              name="gene_name"
+              value="" />
+            <input type="submit" value="OK" />
+          </form>
+    </div>
+    </body>
+    </CENTER>
 </HTML>
     
         
