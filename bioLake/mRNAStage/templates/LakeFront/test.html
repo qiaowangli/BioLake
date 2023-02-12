@@ -1,0 +1,45 @@
+{% load static %}
+
+<HTML>
+    <HEAD> 
+    <TITLE>BioInformatic Data Lake</TITLE>
+    <link rel="stylesheet" href="{% static 'LakeFront/style/style.css' %}"> 
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    </HEAD>
+
+    <body> 
+        <div style="margin: 100px ">
+           <div class="wave"></div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+       
+           <CENTER><IMG SRC="{% static 'LakeFront/image/UCLogo.jpeg' %}" ALIGN="BOTTOM" width="200" height="200" ></CENTER>
+            <br>
+            <br>
+            <br>
+    <HR> 
+        <div class="boldedForheader">
+        <CENTER> Select the type of analysis for {{gene}}</CENTER>
+        </div>
+    <HR>
+        <br>
+    <CENTER class="boldedForHeaderLink">
+        <a href="https://portal.gdc.cancer.gov" title="mRNA Analysis">mRNA Expression Analysis</a> &nbsp  &nbsp 
+        <a href="https://www.cbioportal.org/" title="DNA mutation Analysis">DNA Mutation Analysis</a> &nbsp  &nbsp 
+        <a href="http://xena.ucsc.edu/" title="Cross sides Analysis">Cross sides Analysis </a> &nbsp  &nbsp
+        <a href="http://xena.ucsc.edu/" title="Survival Analysis">Survival Analysis </a> &nbsp  &nbsp
+
+        <br>
+        <br>
+        <br>
+        
+        <button onclick="history.back()">Go back to the main page</button>
+    </CENTER>
+
+    <br>
+    <br>
+    <br>
+    <br>
+</HTML>
+    
+        

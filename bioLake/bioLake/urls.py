@@ -18,7 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('LakeFront/', include('LakeFront.urls')),
+    # path('LakeFront/', include('LakeFront.urls')),
     path('', include('LakeFront.urls')),
     path('geneAnalysis/', include('LakeFront.urls'))
 ]
