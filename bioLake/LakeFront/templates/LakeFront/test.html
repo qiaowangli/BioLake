@@ -33,13 +33,40 @@
         <br>
         <br>
 
-        <button onclick="history.back()">Go back to the main page</button>
-    </CENTER>
+        <H1 class="boldedForheader" >Select analysis type and dataset</H1>
+
+        <!-- <label for="analysisType">Choose a car:</label> -->
+        <form action="pipeline/" method="post" id="infoform">
+            {% csrf_token %}
+            <select name="analysisType" id="analysisType" form="infoform">
+              <option value="mRNA">mRNA Gene expression analysis</option>
+              <option value="DNA">DNA mutataion analysis</option>
+              <option value="mixture">mRNA & DNA cross sides analysis</option>
+              <option value="ML">Survival analysis</option>
+            </select>
+
+            &nbsp  &nbsp 
+            &nbsp  &nbsp 
+
+            <select name="geneData" id="geneData" form="infoform">
+                <option value="TCGA_PRAD">TCGA_PRAD</option>
+                <option value="CBioProtal_PRAD">CBioProtal_PRAD</option>
+                <option value="XENE_PRAD">XENE_PRAD</option>
+                <option value="ownData">use my own dataset</option>
+              </select>
+            <input type="hidden" name="geneID" value={{gene}}>
+            <br><br>
+            <input type="submit" value="Submit">
+          </form>
 
     <br>
     <br>
     <br>
-    <br>
+
+    <button onclick="history.back()">Go back to the main page</button>
+</CENTER>
+
+
 </HTML>
     
         

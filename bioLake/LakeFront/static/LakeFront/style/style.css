@@ -4,7 +4,7 @@
 
 .boldedForheader { 
     font-weight: bold; 
-    color: darkorange;
+    color:#fff;
     font-size:x-large;
 }
 
@@ -16,6 +16,10 @@
     flex: 0 0 auto;
     width: 100%;
 }
+
+.dropdown {
+    display: inline-block;
+  }
 
 
 

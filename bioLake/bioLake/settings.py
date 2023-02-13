@@ -41,10 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'LakeFront',
-    'mRNAStage',
-    'DNAStage',
-    'mixtureStage',
-    'MlStage'
+    'mRNAStage'
+    # 'DNAStage',
+    # 'mixtureStage',
+    # 'MlStage'
     
 ]
 
